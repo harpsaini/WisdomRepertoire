@@ -8,24 +8,36 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-
 body{
-  background-color: rgb(157, 134, 158);
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
+  background-color: #d9dddc;
 }
 
+header{
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  min-height: 40vh;
+} 
+
+h1,h3{
+  margin: 0;
+  padding: 0;
+}
 
 button{
   color: plum;
   background-color: purple;
   color: white;
   border-radius: 50px;
+  width: 250px;
 }
 
 button:hover{
@@ -33,14 +45,14 @@ button:hover{
   color: purple;
 }
 
-.userEvent{
-  text-align: center;
-}
-
-.display{
-  margin:200px;
-}
 .userEvent1{
   display: none;
 }
 
+footer{
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
